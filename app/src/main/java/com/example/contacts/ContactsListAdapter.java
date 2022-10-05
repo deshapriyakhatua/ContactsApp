@@ -35,7 +35,7 @@ public class ContactsListAdapter extends ArrayAdapter<ContactsList> {
         String mobile = getItem(position).getMobile();
 
         //creating object
-        ContactsList list = new ContactsList(imageLink, name, country, mobile);
+        //ContactsList list = new ContactsList(imageLink, name, country, mobile);
 
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         convertView = layoutInflater.inflate(mResource, parent, false);
