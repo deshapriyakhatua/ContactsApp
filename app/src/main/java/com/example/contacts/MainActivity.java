@@ -2,7 +2,10 @@ package com.example.contacts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -37,5 +40,17 @@ public class MainActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.contactList);
         listView.setAdapter(adapter);
 
+        listView.setClickable(true);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(MainActivity.this,FullscreenActivity.class);
+
+                intent.putExtra("name",dataList.get(i).getName());
+                intent.putExtra("country",dataList.get(i).getCountry());
+                intent.putExtra("mobile",dataList.get(i).getMobile());
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ADARSHA/AndroidStudioProjects/Contacts/app/src/main/res/layout/activity_fullscreen.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/ADARSHA/AndroidStudioProjects/Contacts/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/ADARSHA/AndroidStudioProjects/Contacts/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/Users/ADARSHA/AndroidStudioProjects/Contacts/app/src/main/res/layout/user_prifile.xml" value="0.365625" />
       </map>
     </option>
   </component>
