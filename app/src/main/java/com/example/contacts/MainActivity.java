@@ -29,11 +29,13 @@ public class MainActivity extends AppCompatActivity {
         dataList.add(new ContactsList("https://images.unsplash.com/photo-1502323703385-c3ea9ace787d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80","Deshapriya9","India","9091494739"));
         dataList.add(new ContactsList("https://images.unsplash.com/photo-1574701147838-eb4e86cce813?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80","Deshapriya10","India","9091494739"));
 
-        ListView listView = (ListView) findViewById(R.id.contactList);
+
 
         //creating new adapter
         ContactsListAdapter adapter = new ContactsListAdapter(this, R.layout.list_item, dataList);
+
+        ListView listView = (ListView) findViewById(R.id.contactList);
         listView.setAdapter(adapter);
-        //hi
+
     }
 }
