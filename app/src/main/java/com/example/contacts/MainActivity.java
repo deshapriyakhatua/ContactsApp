@@ -34,6 +34,6 @@ public class MainActivity extends AppCompatActivity {
         //creating new adapter
         ContactsListAdapter adapter = new ContactsListAdapter(this, R.layout.list_item, dataList);
         listView.setAdapter(adapter);
-
+        //hi
     }
 }
