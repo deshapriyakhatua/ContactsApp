@@ -26,6 +26,8 @@ public class FullscreenActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_fullscreen);
 
+            getSupportActionBar().hide();
+
             Intent intent = this.getIntent();
 
             TextView name = findViewById(R.id.textViewNameProfile);
